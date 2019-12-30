@@ -70,3 +70,8 @@ stages:
     inputs:
       buildType: 'current'
       targetPath: '$(Pipeline.Workspace)'
+      
+      - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: 'current'
+      targetPath: '$(Pipeline.Workspace)'
