@@ -66,8 +66,4 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
-  - task: DownloadPipelineArtifact@2
-    inputs:
-      buildType: 'current'
-      targetPath: '$(Pipeline.Workspace)'
    
